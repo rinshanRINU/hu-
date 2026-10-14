@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>HU (Happy User) | Electronics & Smart Gadgets UAE</title>
+  <meta name="description" content="HU (Happy User) is a premier UAE brand delivering quality consumer electronics, mobile accessories and smart gadgets to retail, distribution, and export markets.">
+  <link rel="icon" type="image/png" href="assets/hu-logo.png">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 1. Top Scroll Progress Bar -->
+  <div id="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- 2. Dynamic Background Color Shift Canvas -->
+  <div id="bg-canvas-layer" aria-hidden="true"></div>
+
+  <!-- 3. Fixed Lottie Background Layer (Scrubbed with Scroll, Blurred 70px) -->
+  <div id="lottie-bg" aria-hidden="true"></div>
+
+  <!-- 4. Faint Dot-Grid / Circuit Pattern that Shifts with Scroll -->
+  <div id="circuit-grid-pattern" aria-hidden="true"></div>
+
+  <!-- 5. Floating Parallax Lime & Mint Ambient Shapes Layer -->
+  <div id="floating-shapes-container" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="site-nav" id="main-nav" aria-label="Main Navigation">
+      <a href="#hero" class="nav-brand" aria-label="Happy User Home">
+        <img src="assets/hu-logo.png" alt="HU (Happy User) Logo" class="nav-logo" width="138" height="44">
+      </a>
+
+      <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#cats" class="nav-link">Categories</a></li>
+        <li><a href="#channels" class="nav-link">Channels</a></li>
+        <li><a href="#stores" class="nav-link">Retail Presence</a></li>
+        <li><a href="#videos" class="nav-link">Videos</a></li>
+        <li><a href="#markets" class="nav-link">Markets</a></li>
+        <li><a href="#contact" class="nav-cta">Partner With Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="content-wrapper">
+    <!-- Hero Section (Seamless gradient with mask-image, on-load entrance animations) -->
+    <section class="hero-section" id="hero">
+      <div class="hero-gradient-layer" aria-hidden="true"></div>
+
+      <div class="hero-grid">
+        <!-- Hero Text Column: animates in from left on page load -->
+        <div class="hero-text-col hero-onload-left">
+          <div class="hero-eyebrow">
+            <span class="hero-eyebrow-flag">🇦🇪</span>
+            <span>UAE Consumer Electronics Leader</span>
+          </div>
+          <h1 class="hero-title">
+            Made for <span class="highlight">Happy Users</span>
+          </h1>
+          <p class="hero-description">
+            Electronics, mobile accessories and smart gadgets, delivered from the UAE. Prepared for regional partners, retail suppliers, and strategic investors.
+          </p>
+          <div class="hero-actions">
+            <a href="#cats" class="btn-primary">
+              <span>Explore Products</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#about" class="btn-secondary">Company Overview</a>
+          </div>
+        </div>
+
+        <!-- Hero Collage Column: elements slide in from right on load, then float gently -->
+        <div class="hero-collage-col hero-onload-right">
+          <div class="hero-collage-box">
+            <div class="hero-ambient-glow" aria-hidden="true"></div>
+            
+            <!-- Central Frosted Brand Card -->
+            <div class="hero-card-wrapper hero-entrance-main">
+              <div class="hero-main-card tilt-card" id="hero-portfolio-card">
+                <img src="assets/hu-logo.png" alt="HU Brand Emblem" class="hero-card-logo" width="160" height="52">
+                <span class="hero-card-tag">Company Portfolio</span>
+                <p class="hero-card-meta">Premium Dubai-based warehousing, certified quality, and nationwide retail fulfillment.</p>
+              </div>
+            </div>
+
+            <!-- Floating Pill Spec Badges -->
+            <div class="hero-pill-wrapper hero-entrance-pill1">
+              <div class="hero-floating-pill hero-pill-1">
+                <span class="hero-pill-icon">✓</span>
+                <span>Shop's Whats Trending</span>
+              </div>
+            </div>
+
+            <div class="hero-pill-wrapper hero-entrance-pill2">
+              <div class="hero-floating-pill hero-pill-2">
+                <span class="hero-pill-icon">★</span>
+                <span>10 Categories • 200+ Products</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Flow (Completely transparent section containers so single background shines through) -->
+    <main>
+      <!-- About Section -->
+      <section class="section-block" id="about">
+        <div class="section-header scroll-reveal">
+          <span class="section-badge"><span class="section-badge-dot"></span> Who We Are</span>
+          <h2 class="section-title">About HU (Happy User)</h2>
+          <p class="section-subtitle">Bridging consumer delight with premier investor credibility and high-tier retail logistics.</p>
+        </div>
+
+        <div class="about-card scroll-reveal scale-up">
+          <p class="about-text">
+            HU (Happy User) is a UAE-based consumer brand selling electronics, mobile accessories and smart gadgets to everyday customers through retail, distribution, export and online channels, including our storefront <strong>myhustore.com</strong>. We run our own state-of-the-art warehouse in the UAE, which lets us hold stock locally and control the customer experience from listing to delivery.
+          </p>
+
+          <div class="stats-grid">
+            <div class="stat-card scroll-reveal" data-stagger="0">
+              <div class="stat-number"><span class="stat-counter" data-target="10">0</span></div>
+              <div class="stat-label">Product Categories</div>
+            </div>
+            <div class="stat-card scroll-reveal" data-stagger="1">
+              <div class="stat-number"><span class="stat-counter" data-target="200" data-suffix="+">0</span></div>
+              <div class="stat-label">Active Products</div>
+            </div>
+            <div class="stat-card scroll-reveal" data-stagger="2">
+              <div class="stat-number"><span class="stat-counter" data-target="6">0</span></div>
+              <div class="stat-label">Sales Channels</div>
+            </div>
+            <div class="stat-card scroll-reveal" data-stagger="3">
+              <div class="stat-number"><span class="stat-counter" data-target="16">0</span></div>
+              <div class="stat-label">Nesto UAE Outlets</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mission and Vision Section -->
+      <section class="section-block" id="mission-vision">
+        <div class="section-header scroll-reveal">
+          <span class="section-badge"><span class="section-badge-dot"></span> Purpose & Direction</span>
+          <h2 class="section-title">Mission and Vision</h2>
+          <p class="section-subtitle">What drives our innovation and guides our regional footprint.</p>
+        </div>
+
+        <div class="mission-vision-grid">
+          <div class="mv-card mission scroll-reveal slide-left">
+            <div>
+              <span class="mv-badge">Our Mission</span>
+              <h3 class="mv-title">Everyday Delight for Every Customer</h3>
+              <p class="mv-desc">
+                To make everyday life easier and happier by bringing quality, good-value electronics, accessories and smart gadgets to every user, through the channels where they shop.
+              </p>
+            </div>
+          </div>
+
+          <div class="mv-card vision scroll-reveal slide-right">
+            <div>
+              <span class="mv-badge">Our Vision</span>
+              <h3 class="mv-title">Trusted Household Presence across GCC & Africa</h3>
+              <p class="mv-desc">
+                To become a trusted household brand across the GCC and Africa, known for products that are thoughtfully made for happy users.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product Categories Section -->
+      <section class="section-block" id="cats">
+        <div class="section-header scroll-reveal">
+          <span class="section-badge"><span class="section-badge-dot"></span> Consumer Catalog</span>
+          <h2 class="section-title">Product Categories</h2>
+          <p class="section-subtitle">10 core categories, 200+ fast-moving electronics and smart accessories. Select any category to view more.</p>
+        </div>
+
+        <div class="category-grid" id="category-grid-container">
+          <!-- Populated by JavaScript as clickable cards linking to myhustore.com -->
+        </div>
+      </section>
+
+      <!-- Six Sales Channels Section -->
+      <section class="section-block" id="channels">
+        <div class="section-header scroll-reveal">
+          <span class="section-badge"><span class="section-badge-dot"></span> Omnichannel Distribution</span>
+          <h2 class="section-title">Our Six Sales Channels</h2>
+          <p class="section-subtitle">One unified brand, reaching regional consumers through diverse, reliable touchpoints.</p>
+        </div>
+
+        <div class="channel-grid" id="channel-grid-container">
+          <!-- Populated by JavaScript with 60ms stagger per item -->
+        </div>
+      </section>
+
+      <!-- Modern Trade & Retail Presence Section -->
+      <section class="section-block" id="stores">
+        <div class="section-header scroll-reveal">
+          <span class="section-badge"><span class="section-badge-dot"></span> On-Shelf Retail</span>
+          <h2 class="section-title">Modern Trade Presence</h2>
+          <p class="section-subtitle">Prominent retail supermarket and hypermarket presence across the United Arab Emirates.</p>
+        </div>
+
+        <!-- Nesto Hypermarket Highlight -->
+        <div class="nesto-showcase-box scroll-reveal scale-up">
+          <div class="nesto-logo-card">
+            <img src="assets/nesto-logo.png" alt="Nesto Hypermarket Logo" width="230" height="90" loading="lazy" decoding="async">
+          </div>
+          <div class="nesto-branches-wrap">
+            <h4>16 Nesto Branches across the UAE</h4>
+            <div class="chips-container" id="nesto-chips-container">
+              <!-- Nesto branch chips fade in one-by-one -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Other Key Retailers -->
+        <div class="scroll-reveal">
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--text-strong); margin-bottom: 16px;">Other Retail Partners</h3>
+          <div class="other-retailers-grid" id="retailers-grid-container">
+            <!-- Retailer logo cards with stagger -->
+          </div>
+          <div id="other-retailers-chips" class="chips-container" style="margin-top: 16px;">
+            <!-- Other retail chips -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Videos Showcase Section -->
+      <section class="section-block" id="videos">
+        <div class="section-header scroll-reveal">
+          <span class="section-badge"><span class="section-badge-dot"></span> Brand in Motion</span>
+          <h2 class="section-title">See HU in Action</h2>
+          <p class="section-subtitle">Step inside our operations, logistics warehousing, and team culture.</p>
+        </div>
+
+        <div class="video-grid" id="video-grid-container">
+          <!-- Interactive HTML5 video trigger cards with thumbnail & duration -->
+        </div>
+      </section>
+
+      <!-- Market Expansion Roadmap Section -->
+      <section class="section-block" id="markets">
+        <div class="section-header scroll-reveal">
+          <span class="section-badge"><span class="section-badge-dot"></span> Strategic Growth</span>
+          <h2 class="section-title">Market Expansion Roadmap</h2>
+          <p class="section-subtitle">Strategic rollout across the GCC and African continent. Phase 1 establishes high-impact brand awareness; Phase 2 scales distribution pipelines.</p>
+        </div>
+
+        <div class="market-grid">
+          <div class="market-card scroll-reveal slide-left">
+            <h3 class="market-region-title">
+              <span>GCC Expansion</span>
+            </h3>
+            <p class="market-legend">Phase 1 active distribution and near-term launch zones:</p>
+            <div id="gcc-chips-container" class="chips-container">
+              <!-- GCC chips -->
+            </div>
+          </div>
+
+          <div class="market-card scroll-reveal slide-right">
+            <h3 class="market-region-title">
+              <span>Africa Expansion</span>
+            </h3>
+            <p class="market-legend">Phase 1 awareness push & Phase 2 scalable distribution channels:</p>
+            <div id="africa-chips-container" class="chips-container">
+              <!-- Africa chips -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="site-footer scroll-reveal" id="contact">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <img src="assets/hu-logo.png" alt="Happy User Logo" width="160" height="52" loading="lazy" decoding="async">
+          <h2 class="footer-lead">Let's Work Together</h2>
+          <p class="footer-desc">
+            Suppliers, retail distributors, export partners, and institutional investors—we welcome visionary collaborations as we expand across the Middle East & Africa.
+          </p>
+        </div>
+
+        <div class="footer-contact-col">
+          <h3 class="footer-contact-title">Direct Inquiries</h3>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+              <span>Storefront: <a href="https://myhustore.com" target="_blank" rel="noopener noreferrer">myhustore.com</a></span>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+              <span>Instagram: <a href="https://instagram.com/hu_store__" target="_blank" rel="noopener noreferrer">@hu_store__</a></span>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Headquarters: Dubai, United Arab Emirates</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 HU (Happy User). All rights reserved.</p>
+        <p>Luminous Oasis Design System • Built with Precision</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Reusable Glassmorphic Channel Modal Dialog -->
+  <div class="modal-overlay" id="app-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">&times;</button>
+      <div class="modal-content-body" id="modal-content-container">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Dedicated Video Lightbox Player Modal -->
+  <div class="video-lightbox-overlay" id="video-lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="video-lightbox-box">
+      <button class="video-lightbox-close" id="video-lightbox-close-btn" aria-label="Close video player">&times;</button>
+      <button class="video-lightbox-nav prev" id="video-lightbox-prev-btn" aria-label="Previous video">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <button class="video-lightbox-nav next" id="video-lightbox-next-btn" aria-label="Next video">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+      <div class="video-player-container">
+        <video id="lightbox-video-player" playsinline controls preload="metadata"></video>
+        <div class="video-missing-box" id="video-missing-box" style="display:none;">
+          <div class="video-missing-icon">🎬</div>
+          <h4 class="missing-title">Local Video File Required</h4>
+          <p class="missing-instructions" id="video-missing-instruction"></p>
+          <p class="missing-format">Recommended: H.264 MP4 with AAC audio (under 30 MB for web)</p>
+        </div>
+      </div>
+      <div class="video-lightbox-meta">
+        <h3 id="video-lightbox-title"></h3>
+        <p id="video-lightbox-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lottie-Web Library via CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+
+  <!-- Lottie Animation Data Fallback for Instant file:// Double-Click Execution -->
+  <script src="assets/hu-background-data.js"></script>
+
+  <!-- Main Website JavaScript Engine -->
+  <script src="main.js"></script>
+</body>
+</html>
